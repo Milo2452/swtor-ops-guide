@@ -31,4 +31,5 @@ Edit the files (guide data is in `src/App.tsx`), commit, and push to `main`. The
 ## Room view frames and kill videos
 
 - Draxus Room view: frame at 2:37 of "Dread Fortress - Master Mode - Draxus - Guide (fully narrated)" by Red Hoth Chilly Peppers (YouTube, Jul 4, 2024): https://www.youtube.com/watch?v=Muqfj9Ss0WU. Markers are projected onto it with a homography fitted to the raised emblem, so they're approximate.
-- Each boss lists one recent YouTube kill video under "Sources for this boss" (picked Nov 24, 2026). Three are flagged pre-7.0 because no newer video turned up: Infernal Council, Bonethrasher and G4-B3.
+- Each boss lists one YouTube kill video per available mode (Story, Veteran/HM, Master/NiM), shown for the mode you pick (picked Nov 24, 2026). Videos older than 7.0 are flagged; a mode without one says "No video found for this mode".
+- More Room views: Tyth (MrBrendini, "Tyth 8M Master Mode", 2:56) and Gharj (YaiiE, "SWTOR Eternity Vault Veteran Boss Fight - Gharj", 0:21). Which way each platform faces is a guess.
