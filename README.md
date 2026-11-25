@@ -27,3 +27,8 @@ npm run build    # outputs dist/
 
 ## Update the site
 Edit the files (guide data is in `src/App.tsx`), commit, and push to `main`. The GitHub Actions workflow (`.github/workflows/pages.yml`) builds and deploys to Pages automatically. Pages must be set to **Settings → Pages → Source: GitHub Actions**.
+
+## Room view frames and kill videos
+
+- Draxus Room view: frame at 2:37 of "Dread Fortress - Master Mode - Draxus - Guide (fully narrated)" by Red Hoth Chilly Peppers (YouTube, Jul 4, 2024): https://www.youtube.com/watch?v=Muqfj9Ss0WU. Markers are projected onto it with a homography fitted to the raised emblem, so they're approximate.
+- Each boss lists one recent YouTube kill video under "Sources for this boss" (picked Nov 24, 2026). Three are flagged pre-7.0 because no newer video turned up: Infernal Council, Bonethrasher and G4-B3.
