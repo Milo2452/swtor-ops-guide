@@ -322,14 +322,14 @@ const OPS: Op[] = [
           t: "P 48 17.6 Tank 1|P 51.9 17.6 Tank 2 (stacked)", tb: ["Both tanks stand in front, stacked on their green circles, to split Double Strike.", "Tank near a pillar, with the raid behind Nefra."],
           h: "P 46.1 43.7 Healers", hb: ["Assign cleanse targets for the green Voice of the Masters DoT (about every 30s)."],
           d: "P 53.9 41.8 DPS (you)|> 70.9 55.3 60.4 43.7 droid runs at someone: leave the red circle", db: ["Stay behind Nefra.", "Get out of the droid's red circle; ranged can take its threat.", "Self-cleanse the DoT if you can."] } ] },
-    { name: "Gate Commander Draxus", mp: { a: "asset:map-df.jpg", f: [1], n: 5, cr: "SWTOR Fandom wiki, Dread Fortress map files" }, sm: { t: "10–15s of Draxus alone, then add waves; he jumps down for some waves.", h: "Add waves are the danger; keep the tanks up.", d: "Follow the add kill priority; it's the same as Veteran with less damage." }, ar: "r", conf: "Checked against Dulfy (HM + NiM) + Merlyn", src: ["dDF", "dDFn", "mlDF"],
+    { name: "Gate Commander Draxus", mp: { a: "asset:map-df.jpg", f: [1], n: 5, cr: "SWTOR Fandom wiki, Dread Fortress map files" }, sm: { t: "10–15s of Draxus alone, then add waves; he jumps down for some waves.", h: "Add waves are the danger; keep the tanks up.", d: "Follow the add kill priority; it's the same as Veteran with less damage." }, ar: "r", conf: "Checked against Dulfy (HM + NiM) + Merlyn", src: ["dDF", "dDFn", "mlDF"], flag: ["Map re-cropped to the central hall of the Gatehouse map (top steps, raised emblem in the middle, side halls east and west, south opening). Spawn sides from Dulfy: one Dismantler from the west (red) and one from the east (blue); Corruptors on the sides (or south in waves 5, 6 and 9); Despoiler from the south. Bulwark and Guardian spawn spots are approximate.", "Dulfy (comments): the top steps and the dark area around the middle emblem are slightly raised, and attacks on Bulwarks miss from there."],
       sorc: "Sorc/Sage bubbles cast from outside a Bulwark shield still work on players inside it (Dulfy NiM).",
       nim: ["Dulfy NiM: Subteroth explosions give +200% damage taken, so tanks survive 2–3 at most.", "Dulfy NiM: interrupting a Corruptor gives Backlash (a second interrupt kills you). Plan an interrupt rotation.", "Dulfy NiM: players under a Bulwark shield can't be healed; Guardian slam one-shots non-tanks.", DULFY_OLD],
       ph: [
-        { n: "Draxus phases + 9 add waves", c: "B 50 18.4 Draxus|A 28.9 38.6 Corruptor|A 71.1 38.6 Bulwark|Z 71.1 38.6 3.6 Bulwark shield|A 50 50.1 Subteroth|A 19.3 25.6 Dismantler (blue)|A 80.7 25.6 Dismantler (red)|A 50 31.4 Guardian of the Fortress",
-          t: "P 50 21.3 Tank: cone away|P 21.2 28.5 Off-tank: Dismantlers", tb: ["Face Draxus's Suppressive Fire away. He takes about 20% per landing, then flies off.", "Grab Dismantlers and Guardians; kill the blue Dismantler first (3x Strong Swipe damage)."],
-          h: "P 40.4 42.9 Healers", hb: ["Anyone within 4m of a Bulwark can't be healed. Pull people out to heal them.", "You can leave one add alive to recover between waves."],
-          d: "P 65.3 40 DPS within 4m of Bulwark (you)|P 30.8 41.5 Corruptor interrupter", db: ["Interrupt the Corruptors.", "Stand within 4m of a Bulwark to damage its shielded adds.", "Sequence: Draxus → W1–2 → Draxus + W3 → W4 → Draxus + W5 → W6–8 → Draxus + W9."] } ] },
+        { n: "Draxus phases + 9 add waves", c: "B 50 6 Draxus (lands on the top steps)|R 45.6 21.9 8.8 5 Raised emblem|A 25 22 Dismantler (red, west side)|A 75 22 Dismantler (blue, east side)|A 23 30 Corruptor (west side)|A 77 30 Corruptor (east side)|A 44 40 Bulwark (approx.)|Z 44 40 3.6 Bulwark shield (4m)|A 56 40 Despoiler / Subteroths (south)|A 50 33 Guardian of the Fortress (approx.)",
+          t: "P 50 10.5 Tank on Draxus: Suppressive Fire cone up the steps, away from the group|P 50 29 Off-tank: gather adds mid-room, off the emblem", tb: ["Face Draxus's Suppressive Fire away. He takes about 20% per landing, then flies off.", "Grab Dismantlers and Guardians; kill the blue Dismantler first (3x Strong Swipe damage)."],
+          h: "P 61 31 Healers: outside every Bulwark shield (4m)", hb: ["Anyone within 4m of a Bulwark can't be healed. Pull people out to heal them.", "You can leave one add alive to recover between waves."],
+          d: "P 45 37 DPS inside the Bulwark shield (within 4m)|P 27 27 Corruptor interrupter (west)|P 73 27 Corruptor interrupter (east)", db: ["Interrupt the Corruptors.", "Stand within 4m of a Bulwark to damage its shielded adds.", "Sequence: Draxus → W1–2 → Draxus + W3 → W4 → Draxus + W5 → W6–8 → Draxus + W9."] } ] },
     { name: "Grob'thok, Who Feeds the Forge", mp: { a: "asset:map-df.jpg", f: [2], n: 5, cr: "SWTOR Fandom wiki, Dread Fortress map files" }, sm: { t: "Move Grob'thok into the ceiling magnet to stun him and interrupt Pipe Smash.", h: "The magnet stuns players too; stay out of the outer track.", d: "Don't stand in fire; kill add waves." }, ar: "c", conf: "Checked against Dulfy (HM + NiM) + Merlyn", src: ["dDF", "dDFn", "mlDF"],
       sorc: "Lava feet on you: keep moving and lay the trail where the off-tank drags the Ugnaughts.",
       nim: ["Dulfy NiM: standing under the Magnet kills you; two players get mining lasers.", "Dulfy NiM: Dreadful Ugnaughts are immune until run through lava; Roar knocks back and forces a swap; consecutive Pipe Smashes get lethal.", DULFY_OLD],
@@ -885,36 +885,61 @@ function parse(s: string) {
   }).filter((x: { k: string }) => x.k.length > 0);
 }
 
-function Arena({ ph, role, boss, pi, uid }: { ph: Ph; role: Role; boss: Boss; pi: number; uid: string }) {
+function Arena({ ph, role, boss, pi, uid, dt }: { ph: Ph; role: Role; boss: Boss; pi: number; uid: string; dt?: Rng }) {
   const th = useGrokTheme();
   const you = th.dataviz.categorical[0];
   const bc = th.dataviz.categorical[1];
   const haz = th.dataviz.categorical[2];
   const grey = th.dataviz.other;
   const onMap = !!boss.mp;
-  const txt1 = onMap ? "#FFFFFF" : th.text.primary;
-  const txt2 = onMap ? "#E6EDF3" : th.text.secondary;
-  const txt3 = onMap ? "#D0D7DE" : th.text.tertiary;
-  const halo = onMap ? { stroke: "#000000", strokeWidth: 0.6, paintOrder: "stroke" as const, strokeOpacity: 0.85 } : {};
   const ctx = parse(ph.c);
   const mine = parse(role === "t" ? ph.t : role === "h" ? ph.h : ph.d);
-  const fs = 2.3;
-  const T = (x: number, y: number, t: string, c: string, key: string, anchor: "start" | "middle" | "end") =>
-    <text key={key} x={x} y={y} fontSize={fs} fill={c} textAnchor={anchor} fontFamily={th.font.family} {...halo}>{t}</text>;
-  const lbl = (x: number, y: number, t: string, c: string, key: string) => {
-    const right = x > 66;
-    return T(right ? x - 3 : x + 3, y + 0.8, t, c, key, right ? "end" : "start");
-  };
+  const isOther = (label: string) => role === "d" && !!dt && dpsCat(label) !== "shared" && dpsCat(label) !== dt;
+  const hasOwnMelee = mine.some((e) => e.k === "P" && dpsCat(e.label) === "melee");
+  const mainBoss = ctx.find((e) => e.k === "B");
+  const meleeRing = role === "d" && dt === "melee" && !hasOwnMelee && mainBoss
+    ? <g><circle cx={mainBoss.nums[0]} cy={mainBoss.nums[1]} r={5.5} fill="none" stroke={you} strokeWidth={0.5} strokeDasharray="0.9 0.7" /></g>
+    : null;
+  // Numbered labels: every label becomes a small numbered badge placed next to its marker without overlapping
+  // other badges or markers and always inside the frame; the text goes in a key under the diagram.
+  type Lab = { x: number; y: number; text: string; col: string; dim: boolean };
+  const labs: Lab[] = [];
   const traced = boss.tr ? parse(boss.tr) : [];
-  const floor = onMap ? null : boss.tr ? traced.map((e, i) => {
+  if (!onMap) traced.forEach((e) => { const [x, y, a] = e.nums; if (e.label && (e.k === "K" || e.k === "F")) labs.push({ x: e.k === "K" ? x : x + 2, y: e.k === "K" ? y - a + 2.5 : y + 2.5, text: e.label, col: grey, dim: false }); });
+  ctx.forEach((e) => {
     const [x, y, a, b] = e.nums;
-    if (e.k === "K") return <g key={"k" + i}><circle cx={x} cy={y} r={a} fill={th.bg.subtle} stroke={th.border.default} strokeWidth={0.4} />{a > 20 ? T(x, y - a + 3, e.label, th.text.tertiary, "kl" + i, "middle") : null}</g>;
-    if (e.k === "F") return <g key={"f" + i}><rect x={x} y={y} width={a} height={b} rx={1} fill={th.bg.subtle} stroke={th.border.default} strokeWidth={0.4} />{T(x + 1.5, y + 3, e.label, th.text.tertiary, "fl" + i, "start")}</g>;
-    if (e.k === "V") return <g key={"v" + i}><rect x={x} y={y} width={a} height={b} fill={haz + th.dataviz.areaAlpha} stroke={th.border.default} strokeWidth={0.3} /></g>;
-    return null;
-  }) : (boss.ar === "c" ? <circle cx={50} cy={35} r={33} fill={th.bg.subtle} stroke={th.border.default} strokeWidth={0.4} />
-    : boss.ar === "d" ? <polygon points="50,2 98,35 50,68 2,35" fill={th.bg.subtle} stroke={th.border.default} strokeWidth={0.4} />
-    : <rect x={1} y={1} width={98} height={68} rx={2} fill={th.bg.subtle} stroke={th.border.default} strokeWidth={0.4} />);
+    if (!e.label) return;
+    if (e.k === "Z") labs.push({ x, y: y - a, text: e.label, col: haz, dim: false });
+    else if (e.k === "R") labs.push({ x: x + a / 2, y: y + b / 2, text: e.label, col: haz, dim: false });
+    else if (e.k === "B") labs.push({ x, y, text: e.label, col: bc, dim: false });
+    else if (e.k === "A" || e.k === "O") labs.push({ x, y, text: e.label, col: grey, dim: false });
+  });
+  mine.forEach((e) => {
+    if (!e.label) return;
+    const dim = isOther(e.label);
+    if (e.k === ">") labs.push({ x: (e.nums[0] + e.nums[2]) / 2, y: (e.nums[1] + e.nums[3]) / 2, text: e.label, col: dim ? grey : you, dim });
+    if (e.k === "P") labs.push({ x: e.nums[0], y: e.nums[1], text: e.label + (dim ? " (not your type)" : ""), col: dim ? grey : you, dim });
+  });
+  const pts: number[][] = [...ctx, ...mine].filter((e) => e.k === "B" || e.k === "A" || e.k === "O" || e.k === "P").map((e) => [e.nums[0], e.nums[1], e.k === "B" ? 3.2 : 2.4]);
+  const OFFS = [[3.6, -3], [-3.6, -3], [3.6, 3], [-3.6, 3], [0, -4.4], [0, 4.4], [5, 0], [-5, 0], [6, -5], [-6, -5], [6, 5], [-6, 5], [0, -7], [0, 7], [8.5, 0], [-8.5, 0], [9, -7], [-9, -7], [9, 7], [-9, 7]];
+  const placed: number[][] = [];
+  const RB = 1.75;
+  const badges = labs.map((l) => {
+    let best: number[] = [];
+    let bestScore = 1e9;
+    for (const [dx, dy] of OFFS) {
+      const bx = Math.min(100 - RB - 0.4, Math.max(RB + 0.4, l.x + dx));
+      const by = Math.min(70 - RB - 0.4, Math.max(RB + 0.4, l.y + dy));
+      let score = Math.hypot(bx - l.x, by - l.y) * 0.05;
+      for (const q of placed) { const d = Math.hypot(bx - q[0], by - q[1]); if (d < 2 * RB + 0.5) score += 100 + (2 * RB + 0.5 - d); }
+      for (const q of pts) { const d = Math.hypot(bx - q[0], by - q[1]); if (d < q[2] + RB) score += 10 + (q[2] + RB - d); }
+      if (score < bestScore) { bestScore = score; best = [bx, by]; }
+      if (score < 1) break;
+    }
+    placed.push(best);
+    return best;
+  });
+  const bfs = 2.1;
   const svg = (
     <svg viewBox="0 0 100 70" width="100%" height={onMap ? "100%" : undefined} role="img" aria-label={ph.n} style={onMap ? { position: "absolute", left: 0, top: 0 } : undefined}>
       <defs>
@@ -922,45 +947,139 @@ function Arena({ ph, role, boss, pi, uid }: { ph: Ph; role: Role; boss: Boss; pi
           <path d="M0,0 L10,5 L0,10 z" fill={you} />
         </marker>
       </defs>
-      {floor}
+      {onMap ? null : boss.tr ? traced.map((e, i) => {
+        const [x, y, a, b] = e.nums;
+        if (e.k === "K") return <circle key={"k" + i} cx={x} cy={y} r={a} fill={th.bg.subtle} stroke={th.border.default} strokeWidth={0.4} />;
+        if (e.k === "F") return <rect key={"f" + i} x={x} y={y} width={a} height={b} rx={1} fill={th.bg.subtle} stroke={th.border.default} strokeWidth={0.4} />;
+        if (e.k === "V") return <rect key={"v" + i} x={x} y={y} width={a} height={b} fill={haz + th.dataviz.areaAlpha} stroke={th.border.default} strokeWidth={0.3} />;
+        return null;
+      }) : (boss.ar === "c" ? <circle cx={50} cy={35} r={33} fill={th.bg.subtle} stroke={th.border.default} strokeWidth={0.4} />
+        : boss.ar === "d" ? <polygon points="50,2 98,35 50,68 2,35" fill={th.bg.subtle} stroke={th.border.default} strokeWidth={0.4} />
+        : <rect x={1} y={1} width={98} height={68} rx={2} fill={th.bg.subtle} stroke={th.border.default} strokeWidth={0.4} />)}
       {ctx.map((e, i) => {
         const [x, y, a, b] = e.nums;
-        if (e.k === "Z") return <g key={"z" + i}><circle cx={x} cy={y} r={a} fill={haz + th.dataviz.areaAlpha} stroke={haz} strokeWidth={0.35} strokeDasharray="1.2 0.8" />{T(x, Math.max(3, y - a - 0.8), e.label, txt3, "zl" + i, "middle")}</g>;
-        if (e.k === "R") return <g key={"r" + i}><rect x={x} y={y} width={a} height={b} fill={haz + th.dataviz.areaAlpha} stroke={haz} strokeWidth={0.35} strokeDasharray="1.2 0.8" />{T(x + a / 2, y + b / 2 + 0.8, e.label, txt3, "rl" + i, "middle")}</g>;
+        if (e.k === "Z") return <circle key={"z" + i} cx={x} cy={y} r={a} fill={haz + th.dataviz.areaAlpha} stroke={haz} strokeWidth={0.35} strokeDasharray="1.2 0.8" />;
+        if (e.k === "R") return <rect key={"r" + i} x={x} y={y} width={a} height={b} fill={haz + th.dataviz.areaAlpha} stroke={haz} strokeWidth={0.35} strokeDasharray="1.2 0.8" />;
         return null;
       })}
       {ctx.map((e, i) => {
         const [x, y] = e.nums;
-        if (e.k === "B") return <g key={"b" + i}><circle cx={x} cy={y} r={3} fill={bc} stroke={onMap ? "#000000" : "none"} strokeWidth={0.4} />{lbl(x, y, e.label, txt1, "bl" + i)}</g>;
-        if (e.k === "A") return <g key={"a" + i}><circle cx={x} cy={y} r={1.6} fill={grey} stroke={onMap ? "#FFFFFF" : "none"} strokeWidth={0.3} />{lbl(x, y, e.label, txt2, "al" + i)}</g>;
-        if (e.k === "O") return <g key={"o" + i}><rect x={x - 1.5} y={y - 1.5} width={3} height={3} fill={th.bg.base} stroke={grey} strokeWidth={0.5} />{lbl(x, y, e.label, txt2, "ol" + i)}</g>;
+        if (e.k === "B") return <circle key={"b" + i} cx={x} cy={y} r={3} fill={bc} stroke={onMap ? "#000000" : "none"} strokeWidth={0.4} />;
+        if (e.k === "A") return <circle key={"a" + i} cx={x} cy={y} r={1.6} fill={grey} stroke={onMap ? "#FFFFFF" : "none"} strokeWidth={0.3} />;
+        if (e.k === "O") return <rect key={"o" + i} x={x - 1.5} y={y - 1.5} width={3} height={3} fill={th.bg.base} stroke={grey} strokeWidth={0.5} />;
         return null;
       })}
+      {meleeRing}
       {mine.map((e, i) => {
         if (e.k !== ">") return null;
         const [x1, y1, x2, y2] = e.nums;
-        const mx = (x1 + x2) / 2, my = (y1 + y2) / 2;
-        return <g key={"m" + i}><line x1={x1} y1={y1} x2={x2} y2={y2} stroke={you} strokeWidth={0.7} strokeDasharray="1.6 1" markerEnd={"url(#ah" + uid + ")"} />{e.label ? T(mx, my - 1.4, e.label, txt1, "ml" + i, "middle") : null}</g>;
+        const dim = isOther(e.label);
+        return <line key={"m" + i} opacity={dim ? 0.45 : 1} x1={x1} y1={y1} x2={x2} y2={y2} stroke={dim ? grey : you} strokeWidth={0.7} strokeDasharray="1.6 1" markerEnd={dim ? undefined : "url(#ah" + uid + ")"} />;
       })}
       {mine.map((e, i) => {
         if (e.k !== "P") return null;
         const [x, y] = e.nums;
-        return <g key={"p" + i}><circle cx={x} cy={y} r={2.1} fill={you} stroke={onMap ? "#FFFFFF" : th.bg.base} strokeWidth={0.5} />{lbl(x, y, e.label, txt1, "pl" + i)}</g>;
+        const c = role === "d" ? dpsCat(e.label) : "shared";
+        const dim = isOther(e.label);
+        const mark = c === "melee"
+          ? <polygon points={(x) + "," + (y - 2.6) + " " + (x + 2.6) + "," + y + " " + x + "," + (y + 2.6) + " " + (x - 2.6) + "," + y} fill={dim ? "none" : you} stroke={dim ? grey : (onMap ? "#FFFFFF" : th.bg.base)} strokeWidth={0.5} />
+          : <circle cx={x} cy={y} r={2.1} fill={dim ? "none" : you} stroke={dim ? grey : (onMap ? "#FFFFFF" : th.bg.base)} strokeWidth={0.5} />;
+        return <g key={"p" + i} opacity={dim ? 0.55 : 1}>{mark}{!dim && c !== "shared" && role === "d" ? <circle cx={x} cy={y} r={3.6} fill="none" stroke={you} strokeWidth={0.4} /> : null}</g>;
       })}
-      {boss.tr ? T(98, 68.5, "Room map unavailable, traced layout", th.text.tertiary, "trl", "end") : null}
+      {labs.map((l, i) => {
+        const [bx, by] = badges[i];
+        const far = Math.hypot(bx - l.x, by - l.y) > 4.2;
+        return <g key={"lb" + i} opacity={l.dim ? 0.6 : 1}>
+          {far ? <line x1={l.x} y1={l.y} x2={bx} y2={by} stroke={onMap ? "#FFFFFF" : th.text.tertiary} strokeWidth={0.25} opacity={0.8} /> : null}
+          <circle cx={bx} cy={by} r={RB} fill={l.col} stroke={onMap ? "#000000" : th.bg.base} strokeWidth={0.35} />
+          <text x={bx} y={by + bfs * 0.36} fontSize={bfs} fontWeight={700} fill="#0B1220" textAnchor="middle" fontFamily={th.font.family}>{i + 1}</text>
+        </g>;
+      })}
     </svg>
   );
-  if (!boss.mp) return svg;
+  const key = (
+    <div style={{ display: "flex", flexWrap: "wrap", gap: "4px 14px", marginTop: 8, fontSize: 13, lineHeight: 1.35, color: th.text.secondary }}>
+      {boss.tr ? <div style={{ width: "100%", color: th.text.tertiary, fontStyle: "italic" }}>Room map unavailable, traced layout</div> : null}
+      {labs.map((l, i) => (
+        <div key={"k" + i} style={{ display: "flex", alignItems: "flex-start", gap: 6, opacity: l.dim ? 0.6 : 1, minWidth: 0, maxWidth: "100%" }}>
+          <span style={{ flex: "0 0 auto", display: "inline-flex", alignItems: "center", justifyContent: "center", width: 18, height: 18, borderRadius: 9, background: l.col, color: "#0B1220", fontSize: 11, fontWeight: 700 }}>{i + 1}</span>
+          <span style={{ overflowWrap: "anywhere" }}>{l.text}</span>
+        </div>
+      ))}
+    </div>
+  );
+  if (!boss.mp) return <div>{svg}{key}</div>;
   const mp = boss.mp;
   const fi = mp.f[Math.min(pi, mp.f.length - 1)];
   return (
-    <div style={{ position: "relative", width: "100%", aspectRatio: "10 / 7", overflow: "hidden", borderRadius: 8 }}>
-      <div style={{ position: "absolute", left: 0, width: "100%", top: (-fi * 100) + "%" }}>
-        <Image src={mp.a} alt={"In-game area map: " + boss.name} ratio={"800/" + (560 * mp.n)} width="100%" />
+    <div>
+      <div style={{ position: "relative", width: "100%", aspectRatio: "10 / 7", overflow: "hidden", borderRadius: 8 }}>
+        <div style={{ position: "absolute", left: 0, width: "100%", top: (-fi * 100) + "%" }}>
+          <Image src={mp.a} alt={"In-game area map: " + boss.name} ratio={"800/" + (560 * mp.n)} width="100%" />
+        </div>
+        {svg}
       </div>
-      {svg}
+      {key}
     </div>
   );
+}
+
+type Rng = "melee" | "ranged";
+interface Disc { id: string; ic: string; idisc: string; rc: string; rdisc: string; role: Role; rng: Rng; dist: string; names: string; defs: string[]; intr: string[]; cln: string[]; brk: string[]; mob: string[]; rez: string[]; src: string[] }
+// Every live 7.x discipline (8.0 not live). Role, range and abilities from Swtorista's discipline basics guides (updated for 7.8).
+const DISCS: Disc[] = [
+  { id: "lightning-telekinetics", ic: "Sorcerer", idisc: "Lightning", rc: "Sage", rdisc: "Telekinetics", role: "d", rng: "ranged", dist: "Long Range", names: "Imperial", defs: ["Static Barrier", "Unnatural Preservation", "Force Barrier"], intr: ["Jolt"], cln: ["Expunge"], brk: ["Unbreakable Will"], mob: ["Force Speed", "Cloud Mind (optional)", "Extrication", "Phase Walk (optional)"], rez: [], src: ["https://swtorista.com/articles/sith-inquisitor-sorcerer-lightning-basics-guide/"] },
+  { id: "madness-balance", ic: "Sorcerer", idisc: "Madness", rc: "Sage", rdisc: "Balance", role: "d", rng: "ranged", dist: "Long Range", names: "Imperial", defs: ["Static Barrier", "Unnatural Preservation", "Force Barrier"], intr: ["Jolt"], cln: ["Expunge"], brk: ["Unbreakable Will"], mob: ["Force Speed", "Cloud Mind (optional)", "Extrication", "Phase Walk (optional)"], rez: [], src: ["https://swtorista.com/articles/sith-inquisitor-sorcerer-madness-basics-guide/"] },
+  { id: "corruption-seer", ic: "Sorcerer", idisc: "Corruption", rc: "Sage", rdisc: "Seer", role: "h", rng: "ranged", dist: "Long Range", names: "Imperial", defs: ["Static Barrier", "Force Barrier"], intr: ["Jolt"], cln: ["Expunge"], brk: ["Unbreakable Will"], mob: ["Force Speed", "Cloud Mind (optional)", "Extrication", "Phase Walk (optional)"], rez: ["Reanimation"], src: ["https://swtorista.com/articles/sith-inquisitor-sorcerer-corruption-basics-guide/"] },
+  { id: "darkness-kinetic-combat", ic: "Assassin", idisc: "Darkness", rc: "Shadow", rdisc: "Kinetic Combat", role: "t", rng: "melee", dist: "Short Range", names: "Imperial", defs: ["Deflection", "Dark Ward", "Overcharge Saber (optional)", "Force Shroud"], intr: ["Jolt"], cln: ["Force Shroud"], brk: ["Unbreakable Will"], mob: ["Force Speed", "Force Cloak", "Phantom Stride", "Obfuscating Speed (optional)"], rez: [], src: ["https://swtorista.com/articles/sith-inquisitor-assassin-darkness-basics-guide/"] },
+  { id: "deception-infiltration", ic: "Assassin", idisc: "Deception", rc: "Shadow", rdisc: "Infiltration", role: "d", rng: "melee", dist: "Short Range", names: "Imperial + Republic", defs: ["Deflection", "Overcharge Saber / Battle Readiness (optional)", "Force Shroud / Resilience (optional)"], intr: ["Jolt / Mind Snap"], cln: ["Force Shroud / Resilience (optional)"], brk: ["Unbreakable Will / Force of Will"], mob: ["Force Speed", "Force Cloak", "Mass Mind Control", "Phantom Stride / Shadow Stride", "Obfuscating Speed (optional)"], rez: [], src: ["https://swtorista.com/articles/sith-inquisitor-assassin-deception-basics-guide/", "https://swtorista.com/articles/jedi-consular-shadow-infiltration-basics-guide/"] },
+  { id: "hatred-serenity", ic: "Assassin", idisc: "Hatred", rc: "Shadow", rdisc: "Serenity", role: "d", rng: "melee", dist: "Short Range", names: "Imperial + Republic", defs: ["Deflection", "Overcharge Saber / Battle Readiness (optional)", "Force Shroud / Resilience (optional)"], intr: ["Jolt / Mind Snap"], cln: ["Force Shroud / Resilience (optional)"], brk: ["Unbreakable Will / Force of Will"], mob: ["Force Speed", "Force Cloak", "Mass Mind Control", "Phantom Stride / Shadow Stride", "Obfuscating Speed (optional)"], rez: [], src: ["https://swtorista.com/articles/sith-inquisitor-assassin-hatred-basics-guide/", "https://swtorista.com/articles/jedi-consular-shadow-serenity-basics-guide/"] },
+  { id: "immortal-defense", ic: "Juggernaut", idisc: "Immortal", rc: "Guardian", rdisc: "Defense", role: "t", rng: "melee", dist: "Melee Range", names: "Imperial + Republic", defs: ["Saber Ward", "Endure Pain / Enure", "Enraged Defense / Focused Defense", "Invincible / Warding Call", "Saber Reflect (optional)"], intr: ["Force Charge / Force Leap", "Disruption / Force Kick"], cln: ["Endure Pain / Enure"], brk: ["Unleash / Resolute"], mob: ["Force Charge / Force Leap", "Intercede / Guardian Leap", "Mad Dash / Blade Blitz (optional)"], rez: [], src: ["https://swtorista.com/articles/sith-warrior-juggernaut-immortal-basics-guide/", "https://swtorista.com/articles/defense-guardian-jedi-knight-basics-guide/"] },
+  { id: "vengeance-vigilance", ic: "Juggernaut", idisc: "Vengeance", rc: "Guardian", rdisc: "Vigilance", role: "d", rng: "melee", dist: "Melee Range", names: "Imperial + Republic", defs: ["Saber Ward", "Endure Pain / Enure", "Enraged Defense / Focused Defense", "Saber Reflect (optional)"], intr: ["Force Charge / Force Leap", "Disruption / Force Kick"], cln: ["Endure Pain / Enure"], brk: ["Unleash / Resolute"], mob: ["Force Charge / Force Leap", "Threatening Scream / Challenging Call", "Skewering Strike / Leaping Strike (optional)", "Intercede / Guardian Leap", "Mad Dash / Blade Blitz (optional)"], rez: [], src: ["https://swtorista.com/articles/sith-warrior-juggernaut-vengeance-basics-guide/", "https://swtorista.com/articles/vigilance-guardian-jedi-knight-basics-guide/"] },
+  { id: "rage-focus", ic: "Juggernaut", idisc: "Rage", rc: "Guardian", rdisc: "Focus", role: "d", rng: "melee", dist: "Melee Range", names: "Imperial + Republic", defs: ["Saber Ward", "Endure Pain / Enure", "Enraged Defense / Focused Defense", "Saber Reflect (optional)"], intr: ["Force Charge / Force Leap", "Disruption / Force Kick"], cln: ["Endure Pain / Enure"], brk: ["Unleash / Resolute"], mob: ["Force Charge / Force Leap", "Enrage / Combat Focus", "Threatening Scream / Challenging Call", "Obliterate / Zealous Leap", "Intercede / Guardian Leap", "Mad Dash / Blade Blitz (optional)"], rez: [], src: ["https://swtorista.com/articles/sith-warrior-juggernaut-rage-basics-guide/", "https://swtorista.com/articles/focus-guardian-jedi-knight-basics-guide/"] },
+  { id: "annihilation-watchman", ic: "Marauder", idisc: "Annihilation", rc: "Sentinel", rdisc: "Watchman", role: "d", rng: "melee", dist: "Melee Range", names: "Imperial + Republic", defs: ["Cloak of Pain / Rebuke", "Saber Ward", "Undying Rage / Guarded by the Force (optional)"], intr: ["Force Charge / Force Leap", "Disruption / Force Kick"], cln: [], brk: ["Unleash / Resolute"], mob: ["Force Charge / Force Leap", "Predation / Transcendence (optional)", "Force Camouflage", "Mad Dash / Blade Blitz (optional)"], rez: [], src: ["https://swtorista.com/articles/sith-warrior-marauder-annihilation-basics-guide/", "https://swtorista.com/articles/watchman-sentinel-jedi-knight-basics-guide/"] },
+  { id: "carnage-combat", ic: "Marauder", idisc: "Carnage", rc: "Sentinel", rdisc: "Combat", role: "d", rng: "melee", dist: "Melee Range", names: "Imperial + Republic", defs: ["Cloak of Pain / Rebuke", "Saber Ward", "Undying Rage / Guarded by the Force (optional)"], intr: ["Force Charge / Force Leap", "Disruption / Force Kick"], cln: [], brk: ["Unleash / Resolute"], mob: ["Force Charge / Force Leap", "Driving Gore / Driving Lance (optional)", "Predation / Transcendence (optional)", "Force Camouflage", "Mad Dash / Blade Blitz (optional)"], rez: [], src: ["https://swtorista.com/articles/sith-warrior-marauder-carnage-basics-guide/", "https://swtorista.com/articles/combat-sentinel-jedi-knight-basics-guide/"] },
+  { id: "fury-concentration", ic: "Marauder", idisc: "Fury", rc: "Sentinel", rdisc: "Concentration", role: "d", rng: "melee", dist: "Melee Range", names: "Imperial + Republic", defs: ["Cloak of Pain / Rebuke", "Saber Ward", "Undying Rage / Guarded by the Force (optional)"], intr: ["Force Charge / Force Leap", "Disruption / Force Kick"], cln: [], brk: ["Unleash / Resolute"], mob: ["Force Charge / Force Leap", "Predation / Transcendence (optional)", "Force Camouflage", "Obliterate / Zealous Leap", "Mad Dash / Blade Blitz (optional)"], rez: [], src: ["https://swtorista.com/articles/sith-warrior-marauder-fury-basics-guide/", "https://swtorista.com/articles/concentration-sentinel-jedi-knight-basics-guide/"] },
+  { id: "shield-tech-shield-specialist", ic: "Powertech", idisc: "Shield Tech", rc: "Vanguard", rdisc: "Shield Specialist", role: "t", rng: "melee", dist: "Short Range", names: "Republic", defs: ["Reactive Shield", "Adrenaline Rush", "Riot Gas"], intr: ["Riot Strike", "Impact Charge"], cln: [], brk: ["Adrenaline Rush", "Tenacity"], mob: ["Impact Charge", "Hold the Line (optional)"], rez: [], src: ["https://swtorista.com/articles/trooper-vanguard-shield-specialist-basics-guide/"] },
+  { id: "pyrotech-plasmatech", ic: "Powertech", idisc: "Pyrotech", rc: "Vanguard", rdisc: "Plasmatech", role: "d", rng: "melee", dist: "Short Range", names: "Republic", defs: ["Durasteel Armor", "Reactive Shield", "Adrenaline Rush"], intr: ["Riot Strike", "Storm (optional)"], cln: [], brk: ["Adrenaline Rush", "Tenacity"], mob: ["Storm (optional)", "Sonic Round", "Hold the Line (optional)"], rez: [], src: ["https://swtorista.com/articles/trooper-vanguard-plasmatech-basics-guide/"] },
+  { id: "advanced-prototype-tactics", ic: "Powertech", idisc: "Advanced Prototype", rc: "Vanguard", rdisc: "Tactics", role: "d", rng: "melee", dist: "Short Range", names: "Republic", defs: ["Reactive Shield", "Adrenaline Rush"], intr: ["Riot Strike", "Storm (optional)"], cln: [], brk: ["Adrenaline Rush", "Tenacity"], mob: ["Storm (optional)", "Sonic Round", "Hold the Line (optional)"], rez: [], src: ["https://swtorista.com/articles/trooper-vanguard-tactics-basics-guide/"] },
+  { id: "bodyguard-combat-medic", ic: "Mercenary", idisc: "Bodyguard", rc: "Commando", rdisc: "Combat Medic", role: "h", rng: "ranged", dist: "Long Range", names: "Imperial + Republic", defs: ["Energy Shield / Reactive Shield", "Chaff Flare / Diversion (optional)", "Kolto Overload / Adrenaline Rush", "Responsive Safeguards / Echoing Deterrence (optional)"], intr: ["Disabling Shot"], cln: ["Cure / Field Aid"], brk: ["Determination / Tenacity"], mob: ["Chaff Flare / Diversion (optional)", "Hydraulic Overrides / Hold The Line", "Rocket Out / Propulsion Round (optional)"], rez: ["Onboard AED / Emergency Medical Probe"], src: ["https://swtorista.com/articles/bounty-hunter-mercenary-bodyguard-basics-guide/", "https://swtorista.com/articles/trooper-commando-combat-medic-basics-guide/"] },
+  { id: "arsenal-gunnery", ic: "Mercenary", idisc: "Arsenal", rc: "Commando", rdisc: "Gunnery", role: "d", rng: "ranged", dist: "Long Range", names: "Imperial + Republic", defs: ["Energy Shield / Reactive Shield", "Chaff Flare / Diversion (optional)", "Kolto Overload / Adrenaline Rush", "Responsive Safeguards / Echoing Deterrence (optional)"], intr: ["Disabling Shot"], cln: ["Cure / Field Aid"], brk: ["Determination / Tenacity"], mob: ["Chaff Flare / Diversion (optional)", "Hydraulic Overrides / Hold The Line", "Rocket Out / Propulsion Round (optional)"], rez: [], src: ["https://swtorista.com/articles/bounty-hunter-mercenary-arsenal-basics-guide/", "https://swtorista.com/articles/trooper-commando-gunnery-basics-guide/"] },
+  { id: "innovative-ordnance-assault-specialist", ic: "Mercenary", idisc: "Innovative Ordnance", rc: "Commando", rdisc: "Assault Specialist", role: "d", rng: "ranged", dist: "Long Range", names: "Imperial + Republic", defs: ["Energy Shield / Reactive Shield", "Chaff Flare / Diversion (optional)", "Kolto Overload / Adrenaline Rush", "Responsive Safeguards / Echoing Deterrence (optional)"], intr: ["Disabling Shot"], cln: ["Cure / Field Aid"], brk: ["Determination / Tenacity"], mob: ["Chaff Flare / Diversion (optional)", "Hydraulic Overrides / Hold The Line", "Rocket Out / Propulsion Round (optional)"], rez: [], src: ["https://swtorista.com/articles/bounty-hunter-mercenary-innovative-ordnance-basics-guide/", "https://swtorista.com/articles/trooper-commando-assault-specialist-basics-guide/"] },
+  { id: "medicine-sawbones", ic: "Operative", idisc: "Medicine", rc: "Scoundrel", rdisc: "Sawbones", role: "h", rng: "ranged", dist: "Long Range", names: "Imperial + Republic", defs: ["Evasion / Dodge", "Shield Probe / Defense Screen"], intr: ["Distraction", "Jarring Strike / K.O. (optional)"], cln: ["Evasion / Dodge", "Toxin Scan / Triage"], brk: ["Escape"], mob: ["Cloaking Screen / Disappearing Act", "Exfiltrate / Scamper", "Holotraverse / Trick Move (optional)"], rez: ["Resuscitation Probe / Heartrigger Patch"], src: ["https://swtorista.com/articles/imperial-agent-operative-medicine-basics-guide/", "https://swtorista.com/articles/smuggler-scoundrel-sawbones-basics-guide/"] },
+  { id: "concealment-scrapper", ic: "Operative", idisc: "Concealment", rc: "Scoundrel", rdisc: "Scrapper", role: "d", rng: "melee", dist: "Melee Range", names: "Imperial + Republic", defs: ["Evasion / Dodge", "Shield Probe / Defense Screen"], intr: ["Distraction", "Jarring Strike / K.O. (optional)"], cln: ["Evasion / Dodge", "Toxin Scan / Triage"], brk: ["Escape"], mob: ["Cloaking Screen / Disappearing Act", "Exfiltrate / Scamper", "Holotraverse / Trick Move (optional)"], rez: [], src: ["https://swtorista.com/articles/imperial-agent-operative-concealment-basics-guide/", "https://swtorista.com/articles/smuggler-scoundrel-scrapper-basics-guide/"] },
+  { id: "lethality-ruffian", ic: "Operative", idisc: "Lethality", rc: "Scoundrel", rdisc: "Ruffian", role: "d", rng: "melee", dist: "Short Range", names: "Imperial + Republic", defs: ["Evasion / Dodge", "Shield Probe / Defense Screen"], intr: ["Distraction", "Jarring Strike / K.O. (optional)"], cln: ["Evasion / Dodge", "Toxin Scan / Triage"], brk: ["Escape"], mob: ["Cloaking Screen / Disappearing Act", "Exfiltrate / Scamper", "Holotraverse / Trick Move (optional)"], rez: [], src: ["https://swtorista.com/articles/imperial-agent-operative-lethality-basics-guide/", "https://swtorista.com/articles/smuggler-scoundrel-ruffian-basics-guide/"] },
+  { id: "marksmanship-sharpshooter", ic: "Sniper", idisc: "Marksmanship", rc: "Gunslinger", rdisc: "Sharpshooter", role: "d", rng: "ranged", dist: "Long Range", names: "Imperial + Republic", defs: ["Diversion", "Entrench / Hunker Down", "Shield Probe / Defense Screen", "Ballistic Shield / Scrambling Field (optional)"], intr: ["Distraction"], cln: [], brk: ["Escape"], mob: ["Countermeasures / Surrender", "Covered Escape / Hightail It", "Hololocate / Hideout (optional)"], rez: [], src: ["https://swtorista.com/articles/imperial-agent-sniper-marksmanship-basics-guide/", "https://swtorista.com/articles/smuggler-gunslinger-sharpshooter-basics-guide/"] },
+  { id: "engineering-saboteur", ic: "Sniper", idisc: "Engineering", rc: "Gunslinger", rdisc: "Saboteur", role: "d", rng: "ranged", dist: "Long Range", names: "Imperial + Republic", defs: ["Diversion", "Entrench / Hunker Down", "Shield Probe / Defense Screen", "Ballistic Shield / Scrambling Field (optional)"], intr: ["Distraction"], cln: [], brk: ["Escape"], mob: ["Countermeasures / Surrender", "Covered Escape / Hightail It", "Hololocate / Hideout (optional)"], rez: [], src: ["https://swtorista.com/articles/imperial-agent-sniper-engineering-basics-guide/", "https://swtorista.com/articles/smuggler-gunslinger-saboteur-basics-guide/"] },
+  { id: "virulence-dirty-fighting", ic: "Sniper", idisc: "Virulence", rc: "Gunslinger", rdisc: "Dirty Fighting", role: "d", rng: "ranged", dist: "Long Range", names: "Imperial + Republic", defs: ["Diversion", "Entrench / Hunker Down", "Shield Probe / Defense Screen", "Ballistic Shield / Scrambling Field (optional)"], intr: ["Distraction"], cln: [], brk: ["Escape"], mob: ["Countermeasures / Surrender", "Covered Escape / Hightail It", "Hololocate / Hideout (optional)"], rez: [], src: ["https://swtorista.com/articles/imperial-agent-sniper-virulence-basics-guide/", "https://swtorista.com/articles/smuggler-gunslinger-dirty-fighting-basics-guide/"] },
+];
+const CLASS_PAIRS = DISCS.map((d: Disc) => d.ic + " / " + d.rc).filter((v: string, i: number, a: string[]) => a.indexOf(v) === i);
+const ROLE_WORD: Record<string, string> = { t: "Tank", h: "Healer", d: "DPS" };
+const discLabel = (d: Disc) => d.idisc + " / " + d.rdisc + " – " + (d.role === "d" ? (d.rng === "melee" ? "Melee DPS" : "Ranged DPS") : ROLE_WORD[d.role]);
+const dpsCat = (label: string) => /melee/i.test(label) ? "melee" : /ranged|\brange\b/i.test(label) ? "ranged" : "shared";
+const LS_KEY = "swtorOpsGuide.class.v1";
+function loadPick(): { cls: string; disc: string; role: string; dps: string } {
+  try {
+    const raw = typeof window !== "undefined" && window.localStorage ? window.localStorage.getItem(LS_KEY) : null;
+    if (raw) { const v = JSON.parse(raw); return { cls: String(v.cls ?? ""), disc: String(v.disc ?? ""), role: String(v.role ?? "d"), dps: String(v.dps ?? "ranged") }; }
+  } catch (e) { /* storage blocked */ }
+  return { cls: "", disc: "", role: "d", dps: "ranged" };
+}
+function savePick(v: { cls: string; disc: string; role: string; dps: string }) {
+  try { if (typeof window !== "undefined" && window.localStorage) window.localStorage.setItem(LS_KEY, JSON.stringify(v)); } catch (e) { /* storage blocked */ }
+}
+function toolkit(boss: Boss, d: Disc, role: Role): string[] {
+  const txt = [...boss.ph.flatMap((p: Ph) => [...p.tb, ...p.hb, ...p.db, p.n]), boss.sm.t, boss.sm.h, boss.sm.d, ...boss.nim].join(" ");
+  const out: string[] = [];
+  const sentences = txt.split(/(?<=[.!?;])\s+/);
+  const needsInterrupt = sentences.some((x: string) => /interrupt/i.test(x) && !/(can't|cannot|can not|not|no|un)[ -]?(be )?interrupt/i.test(x));
+  if (needsInterrupt) out.push("This fight has interrupts: yours is " + d.intr.join(", ") + ".");
+  if (/cleans/i.test(txt)) out.push(d.cln.length ? "Cleansable effects come up here: your cleanse " + (d.cln.length > 1 ? "options are " : "is ") + d.cln.join(", ") + " (check in game what each removes)." : "Cleansable effects come up here: " + d.ic + "/" + d.rc + " has no cleanse in Swtorista's ability list, so leave it to healers.");
+  if (/\b(kite|kiting|knock|punt|run|move|moving|leap|jump|spread|dodge|get out)\b/i.test(txt)) out.push("Movement-heavy fight: mobility, threat-drop and rescue tools: " + d.mob.join(", ") + ".");
+  if (/\bstun/i.test(txt)) out.push("Stuns appear in this fight; your stun break is " + d.brk.join(", ") + " (not every boss stun can be broken).");
+  if (role === "h" && d.rez.length && /(revive|rez|death|dies|died)/i.test(txt)) out.push("Combat revive: " + d.rez.join(", ") + ".");
+  out.push("Defensive cooldowns to map to the big hits: " + d.defs.join(", ") + ".");
+  return out;
 }
 
 const ROLE_OPTS = [{ value: "t", label: "Tank" }, { value: "h", label: "Healer" }, { value: "d", label: "DPS" }];
@@ -980,12 +1099,23 @@ export default function App() {
   const ops = ORDER.map((id: string) => OPS.find((o: Op) => o.id === id)).filter((o): o is Op => !!o);
   const [opId, setOpId] = useState<string>("nop");
   const [bi, setBi] = useState<string>("0");
-  const [role, setRole] = useState<Role>("d");
+  const init = loadPick();
+  const [cls, setCls] = useState<string>(init.cls);
+  const [discId, setDiscId] = useState<string>(init.disc);
+  const [roleSel, setRoleSel] = useState<Role>((init.role === "t" || init.role === "h" ? init.role : "d") as Role);
+  const [dpsSel, setDpsSel] = useState<Rng>((init.dps === "melee" ? "melee" : "ranged") as Rng);
+  const disc = DISCS.find((d: Disc) => d.id === discId && d.ic + " / " + d.rc === cls);
+  const role: Role = disc ? disc.role : roleSel;
+  const dt: Rng = disc ? disc.rng : dpsSel;
+  const store = (c: string, d: string, r: string, p: string) => savePick({ cls: c, disc: d, role: r, dps: p });
+  const clsDiscs = DISCS.filter((d: Disc) => d.ic + " / " + d.rc === cls);
   const [mode, setMode] = useState<string>("v");
   const op = ops.find((o: Op) => o.id === opId) ?? ops[0];
   const boss = op.bosses[Math.min(Number(bi), op.bosses.length - 1)];
   const md = op.md.includes(mode) ? mode : "v";
-  const roleName = role === "t" ? "Tank" : role === "h" ? "Healer" : "DPS";
+  const roleName = role === "t" ? "Tank" : role === "h" ? "Healer" : (dt === "melee" ? "Melee DPS" : "Ranged DPS");
+  const kit = disc ? toolkit(boss, disc, role) : [];
+  const showSorc = !!boss.sorc && (!disc || disc.ic === "Sorcerer");
   const real = ops.reduce((a: number, o: Op) => a + o.bosses.filter((b: Boss) => !!b.mp).length, 0);
   const total = ops.reduce((a: number, o: Op) => a + o.bosses.length, 0);
   const covRows = ops.map((o: Op) => [o.name, o.modes, String(o.bosses.length), o.bosses.filter((b: Boss) => !!b.mp).length + " real map / " + o.bosses.filter((b: Boss) => !b.mp).length + " traced"]);
@@ -993,30 +1123,40 @@ export default function App() {
   return (
     <Page title="SWTOR Operations: Positioning by Role" width="wide"
       summary="Pick an operation (named as in the in-game Operations Terminal), a boss, a difficulty and your role to see only your role's spots and moves, phase by phase, drawn on the real boss room where an in-game map exists. Live game: 7.9 (level 80), checked Nov 24, 2026.">
-      <TableOfContents items={[{ label: "Choose a boss, mode and role", id: "pick" }, { label: "Diagrams by phase", id: "diag" }, { label: "Story / Master Mode notes", id: "mm" }, { label: "Sources for this boss", id: "bsrc" }, { label: "Coverage", id: "cov" }, { label: "Room map credits", id: "maps" }, { label: "Key sources and patch checks", id: "src" }]} />
-      <Section heading="Choose a boss, mode and role" id="pick">
+      <TableOfContents items={[{ label: "Choose a boss, mode and class", id: "pick" }, { label: "Diagrams by phase", id: "diag" }, { label: "Story / Master Mode notes", id: "mm" }, { label: "Sources for this boss", id: "bsrc" }, { label: "Classes and disciplines", id: "cls" }, { label: "Coverage", id: "cov" }, { label: "Room map credits", id: "maps" }, { label: "Key sources and patch checks", id: "src" }]} />
+      <Section heading="Choose a boss, mode and class" id="pick">
         <Grid columns={2} plain>
           <Select label="Operation" options={ops.map((o: Op) => ({ value: o.id, label: o.name }))} value={op.id} onChange={(v: string) => { setOpId(v); setBi("0"); }} />
           <Select label="Boss" options={op.bosses.map((b: Boss, i: number) => ({ value: String(i), label: b.name }))} value={bi} onChange={(v: string) => setBi(v)} />
           <Segmented options={op.md.map((m: string) => ({ value: m, label: MODE_LABEL[m] }))} value={md} onChange={(v: string) => setMode(v)} />
-          <Segmented options={ROLE_OPTS as { value: Role; label: string }[]} value={role} onChange={(v: Role) => setRole(v)} />
+          <Select label="Your class (Imperial / Republic)" options={[{ value: "", label: "Any class: pick role myself" }, ...CLASS_PAIRS.map((c: string) => ({ value: c, label: c }))]} value={cls} onChange={(v: string) => { setCls(v); setDiscId(""); store(v, "", roleSel, dpsSel); }} />
+          {cls ? <Select label="Discipline" options={[{ value: "", label: "Choose a discipline…" }, ...clsDiscs.map((d: Disc) => ({ value: d.id, label: discLabel(d) }))]} value={disc ? disc.id : ""} onChange={(v: string) => { setDiscId(v); store(cls, v, roleSel, dpsSel); }} />
+            : <Segmented options={ROLE_OPTS as { value: Role; label: string }[]} value={roleSel} onChange={(v: Role) => { setRoleSel(v); store("", "", v, dpsSel); }} />}
+          {!disc && role === "d" ? <Segmented options={[{ value: "melee", label: "Melee DPS" }, { value: "ranged", label: "Ranged DPS" }]} value={dpsSel} onChange={(v: Rng) => { setDpsSel(v); store(cls, discId, roleSel, v); }} /> : null}
+          {cls && !disc ? <Segmented options={ROLE_OPTS as { value: Role; label: string }[]} value={roleSel} onChange={(v: Role) => { setRoleSel(v); store(cls, "", v, dpsSel); }} /> : null}
         </Grid>
+        {disc ? <Callout tone="info" lead={disc.idisc + " / " + disc.rdisc + ":"}>{"Showing the " + roleName + " view. " + (role === "d" ? (dt === "melee" ? "Melee spots are diamonds and are highlighted; ranged-only spots are dimmed. " : "Ranged spots are highlighted; melee-only spots are dimmed. ") : "") + "Swtorista lists this discipline as " + disc.dist + ". Your choice is remembered on this device."}</Callout> : null}
         <Callout tone="info" lead={boss.mp ? "Drawn on the real room." : "Room map unavailable, traced layout."}>{boss.mp ? "The background is the in-game area map of this boss's room (" + boss.mp.cr + "); markers are placed on it by hand, so treat them as close, not pixel-exact." : "No in-game area map of this room could be found, so the room is redrawn from guide descriptions and is not to scale."} Each diagram shows only the {roleName} markers and arrows; the boss, adds and hazards are there for context. Positions are the same in every mode; the mode switch changes the notes. 8.0 (level 85) is not live yet; expect retuning when it lands.</Callout>
       </Section>
       <Section heading={boss.name + " – " + roleName + " view (" + MODE_LABEL[md] + ")"} id="diag">
         <Properties items={[{ label: "Operation", value: op.name }, { label: "Modes (Operations Terminal)", value: op.modes }, { label: "Room", value: boss.mp ? "Real in-game area map" : "Traced layout (no map found)" }, { label: "Verification", value: boss.conf }]} />
         {md === "s" ? <Callout tone="info" lead={"Story Mode, " + roleName + ":"}>{smText}</Callout> : null}
         <Legend names={[roleName + " position / move", "Boss", "Hazard or zone", "Adds and objects"]} />
+        {role === "d" ? <Text>{"DPS markers: diamonds are melee-only spots, circles are ranged-only or shared spots; the other DPS type's spots are dimmed. Most guides give one DPS spot per phase, so those are shared by melee and ranged" + (dt === "melee" ? "; as melee, stay within 4m of the boss (dotted ring) unless a marker says otherwise." : "; as ranged you can stand further back in the same direction, up to 30m.")}</Text> : null}
         <Grid columns={2}>
           {boss.ph.map((p: Ph, i: number) => (
             <Section key={op.id + bi + role + i} heading={(i + 1) + ". " + p.n}>
-              <Arena ph={p} role={role} boss={boss} pi={i} uid={op.id + bi + role + i} />
+              <Arena ph={p} role={role} boss={boss} pi={i} uid={op.id + bi + role + dt + i} dt={dt} />
               <BulletList items={role === "t" ? p.tb : role === "h" ? p.hb : p.db} />
             </Section>
           ))}
         </Grid>
         {md === "s" ? <Text>Phase bullets above are the Veteran version; Story uses the same spots with lower damage, and anything marked Veteran/VM doesn't happen in Story.</Text> : null}
-        {boss.sorc ? <Callout lead="Sorc/Sage tip.">{boss.sorc}</Callout> : null}
+        {showSorc ? <Callout lead="Sorc/Sage tip.">{boss.sorc}</Callout> : null}
+        {disc ? <Section heading={"Your " + disc.ic + " / " + disc.rc + " (" + disc.idisc + " / " + disc.rdisc + ") toolkit for this boss"}>
+          <BulletList items={kit} />
+          <Text>{"Matched automatically: this boss's mechanics (from the sources below) against your discipline's abilities from Swtorista's " + disc.idisc + " / " + disc.rdisc + " basics guide. These are general uses of your kit, not boss-specific advice. Ability names are shown as " + (disc.names === "Imperial + Republic" ? "Imperial / Republic" : disc.names + " only (the source page for the mirror wasn't available)") + "."}</Text>
+        </Section> : null}
       </Section>
       <Section heading={md === "m" ? "Master Mode (NiM) differences" : md === "s" ? "Story Mode notes, all roles" : "Story and Master Mode notes"} id="mm">
         {md !== "m" ? <BulletList items={["Tank: " + boss.sm.t, "Healer: " + boss.sm.h, "DPS: " + boss.sm.d, "Story notes come from Merlyn's Story Mode guides (Vulkk for XR-53). Where a note says 'Same as Veteran' or 'No Story-specific guide found', no role-specific Story info was found: check in game."]} /> : null}
@@ -1024,6 +1164,11 @@ export default function App() {
       </Section>
       <Section heading="Sources for this boss" id="bsrc">
         <LinkCards links={[...boss.src, "mlSM"].map((k: string) => ({ title: SRC[k].title, site: SRC[k].site, href: SRC[k].href }))} />
+      </Section>
+      <Section heading="Classes and disciplines" id="cls" caption="All 24 live disciplines (7.x; 8.0 is not live). Role and range from Swtorista's basics guides (updated for 7.8). Short Range disciplines (about 10m) use the melee positions in this guide.">
+        <Table columns={["Imperial", "Republic", "Role", "Positioning", "Swtorista range"]} rows={DISCS.map((d: Disc) => [d.ic + " – " + d.idisc, d.rc + " – " + d.rdisc, ROLE_WORD[d.role], d.role === "d" ? (d.rng === "melee" ? "Melee DPS" : "Ranged DPS") : (d.rng === "melee" ? "Melee (" + ROLE_WORD[d.role] + ")" : "Ranged (" + ROLE_WORD[d.role] + ")"), d.dist])} />
+        <Text>Flagged: Lethality / Ruffian, Pyrotech / Plasmatech, Advanced Prototype / Tactics and the Assassin / Shadow disciplines are listed as Short Range by Swtorista; Merlyn calls Ruffian a melee DPS, so they use the melee spots here. Virulence / Dirty Fighting is Long Range (ranged).</Text>
+        <LinkCards links={[{ title: "Discipline basics guides (role, range, abilities)", site: "swtorista.com", href: "https://swtorista.com/articles/smuggler-scoundrel-ruffian-basics-guide/" }, { title: "Class Guides List (7.9)", site: "vulkk.com", href: "https://vulkk.com/2022/02/23/swtor-7-0-class-guides-list/" }, { title: "Ruffian Scoundrel (melee DoT)", site: "merlynswtor.com", href: "https://sites.google.com/view/merlyn-swtor/republic/smuggler/scoundrel/ruffian-scoundrel" }]} />
       </Section>
       <Section heading="Coverage" id="cov" caption={"As of Nov 24, 2026, matching the in-game Operations Terminal list: 16 operations, " + total + " bosses; " + real + " drawn on real room maps, " + (total - real) + " on traced layouts."}>
         <Table columns={["Operation", "Modes", "Bosses", "Room diagrams"]} rows={covRows} />
