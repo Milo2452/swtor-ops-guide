@@ -1284,7 +1284,7 @@ export default function App() {
       </Section>
       <Section heading="Sources for this boss" id="bsrc">
         <LinkCards links={[...boss.src, "mlSM"].map((k: string) => ({ title: SRC[k].title, site: SRC[k].site, href: SRC[k].href }))} />
-        <Text>{"Kill video, " + MODE_LABEL[md] + " Mode (switch the mode above to see the others). Found by a YouTube search on boss name and mode (Story, Veteran = Hard Mode/HM, Master = Nightmare/NiM). 7.0 or later preferred; older videos are flagged. Positions were checked frame by frame only for Draxus so far."}</Text>
+        <Text>{"Kill video, " + MODE_LABEL[md] + " Mode (switch the mode above to see the others). Found by a YouTube search on boss name and mode (Story, Veteran = Hard Mode/HM, Master = Nightmare/NiM). 7.0 or later preferred; older videos are flagged. Dread Fortress positions were frame-reviewed in a November 2026 accuracy audit (Red Hoth narrated Master Mode guides plus written sources). Other operations were not re-audited in that pass."}</Text>
         {(() => { const vm = VID[boss.name] ?? {}; const list = [vm[md], vm[md + "2"]].filter((v): v is { t: string; s: string; h: string } => !!v); return list.length ? <LinkCards links={list.map((v) => ({ title: v.t, site: v.s, href: v.h }))} /> : <Callout tone="info" lead={MODE_LABEL[md] + " Mode:"}>No video found for this mode.</Callout>; })()}
       </Section>
       <Section heading="Classes and disciplines" id="cls" caption="All 24 live disciplines (7.x; 8.0 is not live). Role and range from Swtorista's basics guides (updated for 7.8). Short Range disciplines (about 10m) use the melee positions in this guide.">
@@ -1292,7 +1292,7 @@ export default function App() {
         <Text>Flagged: Lethality / Ruffian, Pyrotech / Plasmatech, Advanced Prototype / Tactics and the Assassin / Shadow disciplines are listed as Short Range by Swtorista; Merlyn calls Ruffian a melee DPS, so they use the melee spots here. Virulence / Dirty Fighting is Long Range (ranged).</Text>
         <LinkCards links={[{ title: "Discipline basics guides (role, range, abilities)", site: "swtorista.com", href: "https://swtorista.com/articles/smuggler-scoundrel-ruffian-basics-guide/" }, { title: "Class Guides List (7.9)", site: "vulkk.com", href: "https://vulkk.com/2022/02/23/swtor-7-0-class-guides-list/" }, { title: "Ruffian Scoundrel (melee DoT)", site: "merlynswtor.com", href: "https://sites.google.com/view/merlyn-swtor/republic/smuggler/scoundrel/ruffian-scoundrel" }]} />
       </Section>
-      <Section heading="Coverage" id="cov" caption={"As of Nov 24, 2026, matching the in-game Operations Terminal list: 16 operations, " + total + " bosses; " + real + " drawn on real room maps, " + (total - real) + " on traced layouts."}>
+      <Section heading="Coverage" id="cov" caption={"As of Nov 25, 2026, matching the in-game Operations Terminal list: 16 operations, " + total + " bosses; " + real + " drawn on real room maps, " + (total - real) + " on traced layouts."}>
         <Table columns={["Operation", "Modes", "Bosses", "Room diagrams"]} rows={covRows} />
         <Text>Children of Nul (8.0) is not on the live terminal yet, so it isn't covered. Lair names (Heart of Ruin = Colossal Monolith, Hive of the Mountain Queen = Mutated Geonosian Queen, Relentless Replication = Propagator Core XR-53, Toborro's Courtyard = Golden Fury) checked against the Galactic Seasons objectives and Swtorista.</Text>
       </Section>
